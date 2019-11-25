@@ -1,0 +1,72 @@
+/* .Header--bottom.Header--overlay, .tweak-header-bottom-overlay-on-index-gallery .Header--bottom.Header--index-gallery {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1000;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+header {
+    background: #000000;
+}
+
+.Header-inner {
+    margin: 0 5vw;
+    padding: 2vh 6vw;
+}
+
+/* header div.Header--overlay.Header.Header--bottom .Header-branding:before {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 66px;
+    background: url(../../../images/ds-light.png) no-repeat 0 0;
+    background-size: contain;
+    top: 15px;
+    left: 20px;
+} */
+
+header.Header div.Header-inner {
+    height: 72px;
+}
+
+header.Header div.Header-inner div.logo {
+    height: 72px;
+    width: 15%;
+    float: left;
+}
+
+header.Header div.Header-inner div.nav-elements {
+    height: 72px;
+    width: 50%;
+    float: left;
+}
+
+header.Header div.Header-inner div.contact {
+    height: 72px;
+    width: 25%;
+    float: left;
+}
+
+header.Header div.Header-inner div.logo a.Header-branding::before {
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 72px 72px;
+    content: "";
+    display: inline-block;
+    height: 72px;
+    margin: 0;
+    vertical-align: middle;
+    width: 72px;
+    background: url(../../../images/ds-light.png);
+}
+
+a {
+    background-color: #000000;
+}
