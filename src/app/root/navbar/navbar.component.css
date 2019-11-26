@@ -13,7 +13,7 @@
 } */
 
 header {
-    background: #000000;
+    opacity: 10%;
 }
 
 .Header-inner {
@@ -32,8 +32,37 @@ header {
     left: 20px;
 } */
 
+.Header-nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0em;
+    font-family: proxima-nova;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 11.5px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 1em;
+    margin: -.618em -20px;
+}
+
+.Header-nav-inner {
+    margin: 0 20px;
+    padding: .618em 0;
+}
+
 header.Header div.Header-inner {
     height: 72px;
+}
+
+nav.Header-nav.Header-nav-primary {
+    top: 10px;
+}
+
+.nav-elements {
+    padding: 10px 10px;
 }
 
 header.Header div.Header-inner div.logo {
@@ -54,6 +83,14 @@ header.Header div.Header-inner div.contact {
     float: left;
 }
 
+div.Header-nav-inner a.Header-nav-item {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    padding: .618em 0;
+    top: 20px;
+}
+
 header.Header div.Header-inner div.logo a.Header-branding::before {
     background-position: center;
     background-repeat: no-repeat !important;
@@ -69,4 +106,21 @@ header.Header div.Header-inner div.logo a.Header-branding::before {
 
 a {
     background-color: #000000;
+}
+
+.Header-inner--bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 111111;
+    max-width: 100%;
 }
