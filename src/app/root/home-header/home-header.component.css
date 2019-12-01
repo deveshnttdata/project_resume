@@ -14,8 +14,13 @@ div.Header-Bottom {
 div.role-text {
     position: absolute;
     width: 42%;
-    top: 130px;
-    left: 15%;
+    top: 230px;
+    left: 10%;
+}
+
+.Index-page-content {
+    width: 100%;
+    float: left;
 }
 
 section#home-header {
@@ -24,6 +29,7 @@ section#home-header {
     width: 100%;
     background: #000 url(../../../images/Header-Images-04.jpg) no-repeat center bottom;
     background-size: cover;
+    opacity: 1px;
 }
 
 h1 {
@@ -37,4 +43,71 @@ h1 {
     line-height: 1em;
     margin-bottom: 40px !important;
     font-size: 7.51vw;
+    color: #fff;
+}
+
+.hire-me {
+    position: absolute;
+    width: 42%;
+    top: 450px;
+    left: 10%;
+}
+
+.hire-me section {
+    margin: 0 0 1em 0;
+    /*font-size: 2.8em;*/
+    margin-bottom: 40px !important;
+}
+
+.hire-me section a {
+    /*font-weight: 200;
+    font-family: freight-display-pro;
+    letter-spacing: .015em;
+    line-height: 1em;
+    font-size: 2.51vw;
+    text-decoration: none;
+    border: 5px;
+    border-color: #fff;*/
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.hire-me section a:first-child:hover {
+    background-color: #e1a87a;
+}
+
+a {
+    display: inline-block;
+    padding: 13px 46px;
+}
+
+.hire-me-btn {
+    transition: all .1s linear;
+    border: 1px solid #e1a87a;
+    font-family: proxima-nova;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+a:hover {
+    background-color: #e1a87a;
+}
+
+.hire-me-video {
+    transition: all .1s linear;
+    border: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-family: proxima-nova;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    -webkit-font-smoothing: subpixel-antialiased;
 }

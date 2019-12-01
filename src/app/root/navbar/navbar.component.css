@@ -12,9 +12,9 @@
     -moz-osx-font-smoothing: grayscale;
 } */
 
-header {
-    opacity: 10%;
-}
+/* header {
+    opacity: 5%;
+} */
 
 .Header-inner {
     margin: 0 5vw;
@@ -55,6 +55,11 @@ header {
 
 header.Header div.Header-inner {
     height: 72px;
+    background-color: #000000;
+}
+
+nav.Header-nav {
+    padding: 1.5em;
 }
 
 nav.Header-nav.Header-nav-primary {
