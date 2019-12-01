@@ -1,94 +1,39 @@
-/* .Header--bottom.Header--overlay, .tweak-header-bottom-overlay-on-index-gallery .Header--bottom.Header--index-gallery {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 0;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     background: transparent;
-    z-index: 1000;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-/* header {
-    opacity: 5%;
-} */
-
-.Header-inner {
-    margin: 0 5vw;
-    padding: 2vh 6vw;
+    align-items: center;
 }
 
-/* header div.Header--overlay.Header.Header--bottom .Header-branding:before {
-    position: absolute;
-    display: block;
-    width: 160px;
-    height: 66px;
-    background: url(../../../images/ds-light.png) no-repeat 0 0;
-    background-size: contain;
-    top: 15px;
-    left: 20px;
-} */
-
-.Header-nav {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
+.flex-item {
+    padding: 1em;
+    text-align: center;
     letter-spacing: 0em;
     font-family: proxima-nova;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 11.5px;
     letter-spacing: .16em;
     text-transform: uppercase;
     white-space: nowrap;
     line-height: 1em;
-    margin: -.618em -20px;
 }
 
-.Header-nav-inner {
-    margin: 0 20px;
-    padding: .618em 0;
+.flex-item:first-child {
+    flex-grow: 1;
 }
 
-header.Header div.Header-inner {
-    height: 72px;
-    background-color: #000000;
+.flex-item:nth-child(2) {
+    flex-grow: 2;
 }
 
-nav.Header-nav {
-    padding: 1.5em;
+.flex-item:nth-child(3) {
+    flex-grow: 1;
+    align-self: center;
 }
 
-nav.Header-nav.Header-nav-primary {
-    top: 10px;
-}
-
-.nav-elements {
-    padding: 10px 10px;
-}
-
-header.Header div.Header-inner div.logo {
-    height: 72px;
-    width: 15%;
-    float: left;
-}
-
-header.Header div.Header-inner div.nav-elements {
-    height: 72px;
-    width: 50%;
-    float: left;
-}
-
-header.Header div.Header-inner div.contact {
-    height: 72px;
-    width: 25%;
-    float: left;
-}
-
-div.Header-nav-inner a.Header-nav-item {
+a {
     text-decoration: none;
     color: #fff;
     margin: 0 20px;
@@ -96,7 +41,11 @@ div.Header-nav-inner a.Header-nav-item {
     top: 20px;
 }
 
-header.Header div.Header-inner div.logo a.Header-branding::before {
+a:hover {
+    color: #e1a87a;
+}
+
+a.Header-branding::before {
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: 72px 72px;
@@ -109,23 +58,15 @@ header.Header div.Header-inner div.logo a.Header-branding::before {
     background: url(../../../images/ds-light.png);
 }
 
-a {
-    background-color: #000000;
+img {
+    display: inline-block;
+    height: 75px;
+    margin: 0;
+    vertical-align: middle;
+    width: 75px;
+    background-size: 72px 72px;
 }
 
-.Header-inner--bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-width: 111111;
-    max-width: 100%;
+.contact {
+    padding: 0px;
 }
